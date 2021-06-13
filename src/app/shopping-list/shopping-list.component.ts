@@ -14,4 +14,7 @@ export class ShoppingListComponent {
     new Ingredient('domat', 1),
   ];
 
+  onIngredientCreated(ingredient: Ingredient): void {
+    this.ingredients.push(ingredient);
+  }
 }
